@@ -1,1 +1,30 @@
-Hello, World!
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">  
+    <title>Login</title>  
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
+</head>  
+<body>
+    <div id="login">  
+        <label for="fastlogin">             <!--锚点定位-->
+            <h1 style="user-select: none">Login</h1>        <!--使网页文字不能被选中-->
+        </label>
+        <!--<form method="post">-->
+			<span id="top">
+            <label>
+				<input id="fastlogin" type="text" required="required" placeholder="学号" name="u" />
+            </label>
+			</span>
+			<span id="bottom">
+            <label>				
+                <input type="password" required="required" placeholder="密码" name="p"/>
+            </label>
+			</span>
+            <a href="main.html">
+                <button class="but" type="submit">登录</button>
+            </a><!--登录是个超链接直接转到主页-->
+    </div>
+</body>  
+</html>  

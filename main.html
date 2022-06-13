@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /><!--charset:character set字符集; UTF-8:万国码-->
+    <title>计网2001班班级网站</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<div id="logo"></div>
+<nav>
+    <ul><!--ul:unordered list, ol:ordered, li:list item-->
+        <li><a href="main.html">主页</a></li>
+        <li><a href="Introduction.html" target="_blank">班级简介</a></li>
+        <li><a href="album.html" target="_blank">班级相册</a></li>
+        <li><a href="schedule.html" target="_blank">班级课表</a></li>
+        <li><a href="share.html" target="_blank">资源分享</a></li>
+        <li><a href="news.html" target="_blank">新闻专区</a></li>
+    </ul>
+    <div id="login">
+        <p>&nbsp;</p>
+        <p><span id="登录"><a href="index.html">登录</a><span style="user-select: none;"> | </span><a href="#">注册</a></span></p>
+        <!--让"|"无法被选中:1.通过边框实现；2.用user-select: none-->
+    </div>
+</nav>
+<div id="parent1">
+	<div id="activity">
+        <div id="box1">
+            <p><span id="ac">活动通知专栏</span></p>
+            <img src="img/活动封面.jpg" title="劳动活动" style="margin-top: 5px; cursor: pointer;" alt="图片找不到了"/>
+            <!--点击小图弹窗查看大图貌似要用到js-->
+        </div>
+        <div id="box2">
+            <!--活动末应标记时间-->
+            <p><a href="activity/activity01.html" target="_blank">计算机网络一班六一小活动</a></p>
+            <p><a href="activity/activity02.html" target="_blank">葛店疫苗接种公告</a></p>
+            <p><a href="activity/activity03.html" target="_blank">期末英语考试事宜</a></p>
+            <p><a href="activity/activity04.html" target="_blank">互联网创新创业大赛公告</a></p>
+            <p><a href="activity/activity05.html" target="_blank">计算机网络班级校区转移通知</a></p>
+            <p><a href="activity/activity06.html" target="_blank">学期末寝室大扫除通知</a></p>
+            <p style="text-align: right"><a href="#">更多&gt;&gt;</a></p>
+        </div>
+    </div>
+</div>
+<!--已删除-->
+<footer>
+    <!--怎样使页面缩小后，盒子位置不变，页脚仍在底部-->
+	<p>Copyright@2021长江职业学院数据信息学院计算机网络技术教研室 All Right Reserved<span style="margin-left: 20px;"></span>建议使用1024*768或更高分辨率浏览</p>
+	<p>地址：长江职业学院（武汉光谷校区）<span style="margin-left: 20px;"></span>电话：18271546893<span style="margin-left: 20px;"></span>电子邮件：1820179645@qq.com </p>
+    <!--弄一个点击文字复制的功能，并提示，已复制-->
+    <p>网站策划：黄民生<span style="margin-left: 20px;"></span>开发团队：黄民生、雷宗润、钱博、胡权<span style="margin-left: 20px;"></span>技术支持：Internet</p>
+</footer>
+</body>
+</html>
