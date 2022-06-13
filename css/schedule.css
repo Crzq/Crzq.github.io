@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/schedule/课表背景.jpg");
+    font-family: "Arial", "Microsoft YaHei", "宋体", serif;
+    font-size: 12px;
+}
+
+#logo {
+    width: 100%;
+    height: 110px;
+    margin: 0 auto;
+    background-color: rgb(1, 22, 75);
+    /*背景图可用png透明图*/
+    background-image: url(../img/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    background-color: #132C68;
+    height: 66px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1); /*盒子阴影*/
+}
+
+ul {
+    list-style: none;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ul li {
+    background-color: #132C68;
+    color: black;
+    font-size: 24px;
+    font-family: "Microsoft YaHei UI Light", serif;
+    font-weight: bolder;
+    float: left;
+    /*如何让文字居中*/
+    width: 160px;
+    height: 66px;
+    text-align: center;
+    line-height: 60px;
+    /*我不得不使用“班级主页”的margin-left来实现导航靠右*/
+}
+
+/*如何让超链接height为66px*/
+
+#nav ul li a:link,
+#nav ul li a:visited {
+    background-color: #132C68;
+    text-decoration: none;
+    color: white;
+}
+
+#nav ul li a:hover {
+    color: #67C23A;
+}
+
+#box {
+    width: 873px;
+    padding-bottom: 20px;
+    margin: 20px auto;
+}
+
+table {
+    border: 2px solid deepskyblue;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table caption {
+    background-color: rgba(255,255,255,.7);
+    font-size: 27px;
+    text-align: center;
+    line-height: 70px;
+    color: red;
+    font-weight: bold;
+}
+
+table tr {
+    background-color: white;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table tr th,
+table tr td {
+    border: 1px solid black;
+}
+
+table tr th {
+    background: #cccccc;
+}
+
+table tr td {
+    font-size: 14px;
+    width: 135px;
+}
+
+#he {
+    background: url(../img/schedule/tablehead.png) no-repeat
+}
+
+#footer {
+    font-size: 12px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f5efe5;
+    background-repeat: repeat-x;
+}
+

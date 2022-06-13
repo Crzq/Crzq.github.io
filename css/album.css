@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+* 			{
+				padding: 0;
+				margin: 0;
+			}
+body 		{
+				font-family: Arial,"Microsoft Yahei","宋体", serif;
+				font-size: 14px;
+				background: #eee;
+			}
+#logo {
+	width: 100%;
+	height: 110px;
+	margin: 0 auto;
+	background-color: rgb(1,22,75);
+	/*背景图可用png透明图*/
+	background-image: url(../img/logo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#nav {
+	background-color: #132C68;
+	height: 66px;
+	box-shadow: 0 0 3px 1px rgba(0,0,0,.1);/*盒子阴影*/
+}
+ul {
+	list-style: none;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+ul li {
+	background-color: #132C68;
+	color: black;
+	font-size: 24px;
+	font-family: "Microsoft YaHei UI Light", serif;
+	font-weight: bolder;
+	float: left;
+	/*如何让文字居中*/
+	width: 160px;
+	height: 66px;
+	text-align: center;
+	line-height: 60px;
+	/*我不得不使用“班级主页”的margin-left来实现导航靠右*/
+}
+
+/*如何让超链接height为66px*/
+
+#nav ul li a:link, #nav ul li a:visited {
+	background-color: #132C68;
+	text-decoration: none;
+	color: white;
+}
+#nav ul li a:hover {color: #67C23A;}
+
+h1 			{text-align: center;}
+
+.container 	{
+				width: 900px;
+				height: 550px;
+				margin: 60px auto;
+				position: relative;
+			}
+.container img{
+				width: 40%;
+				height: auto;
+				padding: 10px 10px 15px;
+				background: white;
+				border: 1px solid #ddd;
+				box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+				-webkit-transition:all 0.5s ease-in;
+				-moz-transition:all 0.5s ease-in;
+				transition:all 0.5s ease-in;
+				position:absolute;
+				z-index:1;
+			}
+.pic1 		{
+				left: 300px;
+				top: 0;
+				-webkit-transform:rotate(-5deg);
+				-moz-transform:rotate(-5deg);
+				transform: rotate(-5deg);
+			}
+.pic2 		{
+				left: 500px;
+				top: 20px;
+				-webkit-transform:rotate(-20deg);
+				-moz-transform:rotate(-20deg);
+				transform: rotate(-20deg);
+			}
+.pic3 		{
+				bottom: -50px;
+				right: 250px;
+				-webkit-transform:rotate(5deg);
+				-moz-transform:rotate(5deg);
+				transform: rotate(5deg);
+			}
+.pic4 		{
+				bottom: 11px;
+				left: 300px;
+				-webkit-transform:rotate(-10deg);
+				-moz-transform:rotate(-10deg);
+				transform: rotate(-10deg);
+			}
+.pic5 		{
+				bottom: 150px;
+				left: 60px;
+				-webkit-transform:rotate(-10deg);
+				-moz-transform:rotate(-10deg);
+				transform: rotate(-10deg);
+			}
+.pic6 		{
+				top: 0;
+				left:-50px;
+				-webkit-transform:rotate(10deg);
+				-moz-transform:rotate(10deg);
+				transform: rotate(10deg);
+			}
+.pic7 		{
+				top: 20px;
+				left: 700px;
+				-webkit-transform:rotate(20deg);
+				-moz-transform:rotate(20deg);
+				transform: rotate(20deg);
+			}
+.pic8 		{
+				bottom: -20px;
+				right: 630px;
+				-webkit-transform:rotate(5deg);
+				-moz-transform:rotate(5deg);
+				transform: rotate(5deg);
+			}
+.pic9 		{
+				top: 190px;
+				left: 550px;
+				-webkit-transform:rotate(15deg);
+				-moz-transform:rotate(15deg);
+				transform: rotate(15deg);
+			}
+.pic10 		{
+				left: 680px;
+				top: 320px;
+				-webkit-transform:rotate(-10deg);
+				-moz-transform:rotate(-10deg);
+				transform: rotate(-10deg);
+			}
+.container img:hover {
+				box-shadow: 15px 15px 20px rgba(50,50,50,0.4);
+				-webkit-transform:rotate(0deg) scale(1.5);
+				-moz-transform:rotate(0deg) scale(1.5);
+				transform:rotate(0deg) scale(1.5);
+				z-index: 2;
+			}
+#footer {
+	font-size: 12px;
+	width: 1000px;
+	margin: 100px auto 0;
+	text-align: center;
+	background-color: #eee;
+	background-repeat: repeat-x;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 10px rgb(0 0 0 / 30%);
+	background-color: #ccc;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: #e0e0e0;
+}
+/*以上3条为页面滚动条样式*/

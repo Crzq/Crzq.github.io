@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	/*background: url("../img/main/deep.jpg") no-repeat center;*/
+}
+
+#logo {
+	width: 100%;
+	height: 80px;
+	margin: 0 auto;
+	/*背景图可用png透明图*/
+	background: url(../img/logo.jpg) no-repeat center;
+}
+
+nav {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	background: transparent;
+    height: 66px;
+	box-shadow: 0 0 3px 1px rgba(0,0,0,.1);/*盒子阴影*/
+}
+nav ul li a {
+	transition: all linear 0.3s;
+	/*实现颜色渐变*/
+}
+nav ul li a:link,
+nav ul li a:visited {
+	background: transparent;
+	text-decoration: none;
+	color: black;
+}
+nav ul li a:hover {
+	color: #67C23A;
+	text-decoration: #67C23A;
+}
+
+#login {color: white;}
+#login a:link,
+#login a:hover,
+#login a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+ul {
+	list-style: none;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+ul li {
+	background: transparent;
+	color: black;
+    font: bold 24px/60px "Microsoft YaHei UI Light", serif;
+	/*60px是line-height*/
+    float: left;
+    /*如何让文字居中*/
+    width: 140px;
+    height: 66px;
+    text-align: center;
+    /*我不得不使用“班级主页”的margin-left来实现导航靠右*/
+}
+
+ul li a {
+	display: block;
+	/*通过将行内元素转换为块级元素，增大a的作用范围*/
+}
+
+#登录 a {
+	transition: all linear 0.5s;
+}
+#登录 a:hover {
+	color: #67C23A;
+}
+
+#parent1 {
+	background: url("../img/main/星空.jfif") no-repeat bottom;
+	background-size: 100%;
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	box-shadow: 1px 10px 10px 10px rgba(0,0,0,.3);
+}
+
+#activity {
+	float: right;
+	padding-top: 5px;
+	margin-right: 40px;
+	margin-top: 50px;
+	background-color: #955579;
+	border: 0 solid black;
+	border-radius: 10px;
+	width: 300px;
+	height: 400px;
+}
+#box1 {
+	background-image: linear-gradient(#955579,#573b6a);
+	/*注意是image不是color*/
+	padding-left: 10px;
+}
+#ac {
+	color: white;
+	font-weight: bolder;
+}
+#box2 {
+	font: 14px 黑体, serif;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 260px;
+	height: 245px;
+	border-radius: 0 0 10px 10px;
+	background-image: linear-gradient(#573b6a,#231d49);
+}
+#box2 p {
+	line-height: 35px;
+}
+
+#box2 a {
+	display: inline-block;
+	transition: all linear 0.5s;
+}
+#box2 a:link,
+#box2 a:visited {
+	text-decoration: none;
+	color: white;
+}
+#box2 a:hover {
+	/*text-decoration: underline white;*/
+	text-decoration: underline;
+	color: #67C23A;
+	transform: translateY(-5px);/*为何这条代码不生效*/
+	transition: all linear 0.5s;
+}							/*书写先后顺序很重要，否则不起作用。我之前hover写在第一项*/
+
+footer {
+	/*position: absolute;*/
+	/*bottom: 5%;*/
+	float: bottom;
+	font-size: 12px;
+	color: black;
+	width: 1000px;
+	margin: 10px auto 0;
+	text-align: center;
+	line-height: 20px;
+	background-color: transparent;
+	background-repeat: repeat-x;
+}
+footer p {
+	font-family: century gothic,texgyreadventor,stheiti,sans-serif;
+	/*此处借用了typora官网的字体*/
+}
