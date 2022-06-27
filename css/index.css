@@ -1,73 +1,61 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    /*--图片路径还是有点没弄明白--*/
-    background: url("../img/index/登录背景图.jpg") no-repeat;
+    background-image: url('../img/index/wp1.jpg');
+    background-repeat: no-repeat;
     background-size: 100%;
-    font: 24px sans-serif;
+    background-position: center;
 }
 
-#login {
-    position: absolute; /*绝对定位，相对于上一个已经定位的父元素进行定位--p126*/
-    top: 50%;
-    left: 50%;
-    width: 372px;
-    height: 300px;
-    margin: -150px 0 0 -150px;
-}
-
-#login h1 {
-    color: white;
-    /*text-shadow:0 0 0px;   */
-    font-size: 32px;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-::-webkit-input-placeholder {
-    color: black;
+#box {
+    margin: 10% auto 10%;
+    padding-top: 60px;
+    padding-left: 60px;
+    width: 440px;
+    height: 240px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 input {
-    width: 350px;
-    height: 18px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 0;
-    /*border-radius: 0; !*radius半径*!*/
-    background: transparent;
-    font-size: 20px;
-    color: white;
+    display: block;
+    padding-left: 10px;
+    width: 360px;
+    height: 40px;
+    border: 1px solid rgb(220, 223, 230);
     outline: none;
-    /*text-shadow:0 0 0 0;   */
-
+    transition: 0.3s;
+    /* border-radius: 5px; */
+}
+input:focus {
+    border: 1px solid rgb(56, 142, 60);
 }
 
-#top, #bottom {
-    border-left: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
+#captcha {
+    position: relative;
+    left: 300px;
 }
 
-.but {
-    display: block; /*?*/
-    width: 372px;
-    min-height: 20px;
-    border: 1px solid #ccc;
-    background: transparent;
-    margin: 0;
-    padding: 9px 14px;
+button {
+    margin-top: 10px;
+    width: 360px;
+    height: 40px;
+    background-color: rgb(56, 142, 60);
+    border: 0;
     color: white;
-    font: 28px/normal "宋体", serif;
-    /*normal是line-height*/
-    border-radius: 26px;
-    /*cursor: pointer;*/
-    transition: all 0.5s;
+    cursor: pointer;
 }
-
-a:link {
-    text-decoration: none;
+button:hover {
+    background-color: rgb(76, 154, 80);
 }
-.but:hover {
-    background: rgba(187,171,171,.6);
-    /*这样能让文字不受背景色影响*/
-    /*background-color: #333333;*/
-    /*opacity: .6;*/
+button:active {
+    background-color: rgb(96, 165, 99);
 }
