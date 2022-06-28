@@ -1,38 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>班级相册</title>
-		<link href="css/album.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>班级相册</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+    <link href="css/album.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-	<div id="logo"></div>
-	<div id="nav">
-		<ul>
-			<li><a href="main.html">主页</a></li>
-			<li><a href="album.html" target="_blank">班级相册</a></li>
-			<li><a href="schedule.html" target="_blank">班级课表</a></li>
-			<li><a href="study.html" target="_blank">study</a></li>
-		</ul>
-	</div>
-	<h1>班级相册</h1>
-		<div class="container">
-				<img class="pic1" src="img/album/img1.jpg" alt="图片找不到了"/>
-				<img class="pic2" src="img/album/img2.jpg" alt="图片找不到了"/>
-				<img class="pic3" src="img/album/img3.jpg" alt="图片找不到了"/>
-				<img class="pic4" src="img/album/img4.jpg" alt="图片找不到了"/>
-				<img class="pic5" src="img/album/img5.jpg" alt="图片找不到了"/>
-				<img class="pic6" src="img/album/img6.jpg" alt="图片找不到了"/>
-				<img class="pic7" src="img/album/img7.jpg" alt="图片找不到了"/>
-				<img class="pic8" src="img/album/img8.jpg" alt="图片找不到了"/>
-				<img class="pic9" src="img/album/img9.jpg" alt="图片找不到了"/>
-				<img class="pic10" src="img/album/img10.jpg" alt="图片找不到了"/>
-		</div>
-	<div id="footer">
-		<p>Copyright@2021长江职业学院数据信息学院计算机网络技术教研室 ALL Right Reserved 建议使用1024*768或更高分辨率浏览</p>
-		<p>地址：长江职业学院（武汉科技新城校区 邮编：430074电话:（027）51897535 13971168360 信箱：573147122@qq.com </p>
-		<p>网站策划：黄民生 开发团队：黄民生、雷宗润、钱博、胡权 技术支持：因特奈特</p>
-	</div>
+<nav>
+    <ul><!--ul:unordered list, ol:ordered, li:list item-->
+        <li><a href="main.html">主页</a></li>
+        <li><a href="album.html" target="_blank">班级相册</a></li>
+        <li><a href="schedule.html" target="_blank">班级课表</a></li>
+        <li><a href="study.html" target="_blank">STUDY</a></li>
+        <li id="login">
+            <a href="index.html">登录</a><span style="user-select: none;"> | </span><a href="#">注册</a>
+            <!--让"|"无法被选中:1.通过边框实现；2.用user-select: none-->
+        </li>
+    </ul>
+
+</nav>
+
+<div class="container">
+    <img class="pic1" src="img/album/img1.jpg" alt="图片找不到了"/>
+    <img class="pic2" src="img/album/img2.jpg" alt="图片找不到了"/>
+    <img class="pic3" src="img/album/img3.jpg" alt="图片找不到了"/>
+    <img class="pic4" src="img/album/img4.jpg" alt="图片找不到了"/>
+    <img class="pic5" src="img/album/img5.jpg" alt="图片找不到了"/>
+    <img class="pic6" src="img/album/img6.jpg" alt="图片找不到了"/>
+    <img class="pic7" src="img/album/img7.jpg" alt="图片找不到了"/>
+    <img class="pic8" src="img/album/img8.jpg" alt="图片找不到了"/>
+    <img class="pic9" src="img/album/img9.jpg" alt="图片找不到了"/>
+    <img class="pic10" src="img/album/img10.jpg" alt="图片找不到了"/>
+</div>
+<div id="footer">
+    <footer>
+        <!--怎样使页面缩小后，盒子位置不变，页脚仍在底部-->
+        <p>Copyright@2021长江职业学院数据信息学院计算机网络技术教研室 All Right Reserved<span style="margin-left: 20px;"></span>建议使用1024*768或更高分辨率浏览
+        </p>
+        <p>地址：长江职业学院（武汉光谷校区）<span style="margin-left: 20px;"></span>电话：18271546893<span
+                style="margin-left: 20px;"></span>电子邮件：1820179645@qq.com </p>
+        <!--弄一个点击文字复制的功能，并提示，已复制-->
+        <p>网站策划：黄民生<span style="margin-left: 20px;"></span>开发团队：黄民生、雷宗润、钱博、胡权<span style="margin-left: 20px;"></span>技术支持：Internet
+        </p>
+    </footer>
+</div>
 </body>
 </html>

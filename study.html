@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>资源分享</title>
+    <title>Study With Me</title>
     <link rel="stylesheet" type="text/css" href="css/study.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
 </head>
 <body>
-<div style="background-color: white;">
-    <div id="logo"></div>
-</div>
-<div id="nav">
-    <ul>
+<nav>
+    <ul><!--ul:unordered list, ol:ordered, li:list item-->
         <li><a href="main.html">主页</a></li>
         <li><a href="album.html" target="_blank">班级相册</a></li>
         <li><a href="schedule.html" target="_blank">班级课表</a></li>
-        <li><a href="study.html">study</a></li>
+        <li><a href="study.html" target="_blank">STUDY</a></li>
+        <li id="login">
+            <a href="index.html">登录</a><span style="user-select: none;"> | </span><a href="#">注册</a>
+            <!--让"|"无法被选中:1.通过边框实现；2.用user-select: none-->
+        </li>
     </ul>
-</div>
+</nav>
 <a href="https://www.ghxi.com/sublimetext4.html" target="_blank">
     <div class="box" title="Sublime Text 永远的神">
         <div class="left">
@@ -31,7 +32,7 @@
 <div class="box" title="多邻国外语学习">
     <a href="https://zzzzzz.me/post-47714.html" target="_blank">
         <div class="left">
-            <img src="img/share/duolingo.jpg" alt="#">
+            <img src="img/study/duolingo.jpg" alt="#">
         </div>
         <div class="right">
             <p>安卓Duolingo多邻国V4.97.6 <br/>多邻国Plus会员破解版下载<br/> - Duolingo全球语言学习APP</p>
@@ -41,7 +42,7 @@
 <div class="box" title="多邻国外语学习">
     <a href="https://zzzzzz.me/post-47714.html" target="_blank">
         <div class="left">
-            <img src="img/share/duolingo.jpg" alt="#">
+            <img src="img/study/duolingo.jpg" alt="#">
         </div>
         <div class="right">
             <p>安卓Duolingo多邻国V4.97.6 <br/>多邻国Plus会员破解版下载<br/> - Duolingo全球语言学习APP</p>
@@ -51,7 +52,7 @@
 <div class="box" title="多邻国外语学习">
     <a href="https://zzzzzz.me/post-47714.html" target="_blank">
         <div class="left">
-            <img src="img/share/duolingo.jpg" alt="#">
+            <img src="img/study/duolingo.jpg" alt="#">
         </div>
         <div class="right">
             <p>安卓Duolingo多邻国V4.97.6 <br/>多邻国Plus会员破解版下载<br/> - Duolingo全球语言学习APP</p>
@@ -59,9 +60,16 @@
     </a>
 </div>
 <div id="footer">
-    <p>Copyright@2021长江职业学院数据信息学院计算机网络技术教研室 ALL Right Reserved 建议使用1024*768或更高分辨率浏览</p>
-    <p>地址：长江职业学院（武汉科技新城校区 邮编：430074电话:（027）51897535 13971168360 信箱：1820179645@qq.com </p>
-    <p>网站策划：黄民生 开发团队：黄民生、雷宗润、钱博、胡权 技术支持：因特奈特</p>
+    <footer>
+        <!--怎样使页面缩小后，盒子位置不变，页脚仍在底部-->
+        <p>Copyright@2021长江职业学院数据信息学院计算机网络技术教研室 All Right Reserved<span style="margin-left: 20px;"></span>建议使用1024*768或更高分辨率浏览
+        </p>
+        <p>地址：长江职业学院（武汉光谷校区）<span style="margin-left: 20px;"></span>电话：18271546893<span
+                style="margin-left: 20px;"></span>电子邮件：1820179645@qq.com </p>
+        <!--弄一个点击文字复制的功能，并提示，已复制-->
+        <p>网站策划：黄民生<span style="margin-left: 20px;"></span>开发团队：黄民生、雷宗润、钱博、胡权<span style="margin-left: 20px;"></span>技术支持：Internet
+        </p>
+    </footer>
 </div>
 </body>
 </html>
