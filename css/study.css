@@ -57,6 +57,7 @@ nav ul li {
     height: 66px;
     text-align: center;
 }
+
 nav ul li:nth-child(4) {
     font-style: italic;
 }
@@ -77,33 +78,26 @@ nav ul li:nth-child(4) {
     color: #ee847f;
 }
 
-.box {
-    position: relative;
+/*.box {
+    margin: 100px auto;
     width: 900px;
     height: 200px;
-    margin: 100px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, .3);
     color: white;
     transition: all .2s ease-out 0s;
 }
+
 .box:hover {
     box-shadow: 0 2px 10px 3px rgb(0 0 0 / 15%);
     transform: translateY(-3px);
-}
-ul li {
-    display: inline-block;
-}
-/*不知为何不生效*/
+}*/
+
+
 
 a:link, a:hover {
     color: white;
     text-decoration: none;
 }
-
-
-
-
 
 #footer {
     position: fixed;
@@ -116,5 +110,9 @@ a:link, a:hover {
     text-align: center;
     line-height: 24px;
 }
+
 /*修改网页文字选中默认蓝色*/
-::selection {color: #fff;background-color: #639;}
+::selection {
+    color: #fff;
+    background-color: #639;
+}
