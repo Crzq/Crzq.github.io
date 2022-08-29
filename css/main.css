@@ -78,7 +78,7 @@ ul li:nth-child(4) {
 }
 
 #parent1 {
-    background: url("../img/main/dusk.jpg") no-repeat bottom;
+    background: url("../img/main/dusk.webp") no-repeat bottom;
     background-size: 100%;
     width: 1000px;
     height: 500px;
